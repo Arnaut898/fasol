@@ -177,10 +177,6 @@ html::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
-img {
-  pointer-events: none;
-}
-
 .container {
   width: 100%;
   max-width: 1920px;
@@ -259,7 +255,7 @@ img {
 
 .menu {
   position: fixed;
-  top: -100%;
+  top: -150%;
   left: 0;
   right: 0;
   bottom: 0;
@@ -363,15 +359,15 @@ img {
 }
 
 .slide-1 {
-  background-image: url(../img/slider/slide-1.webp);
+  background-image: url(../img/slider/slide-1.jpg);
 }
 
 .slide-2 {
-  background-image: url(../img/slider/slide-2.webp);
+  background-image: url(../img/slider/slide-2.jpg);
 }
 
 .slide-3 {
-  background-image: url(../img/slider/slide-3.webp);
+  background-image: url(../img/slider/slide-3.jpg);
 }
 
 .slider__item-wrapper {
@@ -591,7 +587,7 @@ img {
 }
 
 .about {
-  background-image: url(../img/about-bg.webp);
+  background-image: url(../img/about-bg.jpg);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -769,7 +765,7 @@ img {
 }
 
 .map__link {
-  background-image: url(../img/map.webp);
+  background-image: url(../img/map.png);
   width: 400px;
   height: 400px;
   border-radius: 50%;
@@ -788,6 +784,14 @@ img {
   overflow: auto;
   transform: translateY(-100%);
   transition: 0.5s;
+}
+.popup::-webkit-scrollbar {
+  background: #43ECAC;
+  width: 6px;
+}
+.popup::-webkit-scrollbar-thumb {
+  background: #FFFFFF;
+  border-radius: 10px;
 }
 
 .popup-active {
@@ -1038,6 +1042,9 @@ img {
   .about__content-item span {
     width: 8px;
     height: 8px;
+  }
+  .form__input {
+    padding: 14px 20px 14px 10px;
   }
 }
 @media (max-width: 425px) {
